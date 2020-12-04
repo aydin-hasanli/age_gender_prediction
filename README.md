@@ -33,7 +33,7 @@ Ethnicity category is mapped as an integer from 0 to 4, denoting  White, Black, 
 
 
 ### PCA Decomposition
-PCA decomposition was performed on 90 % of variance. Which came out 73 componets.
+PCA decomposition was performed on 90 % of variance. Which came out as 73 componets.
 ![Scree Plot](images/Scree.png)
 ![Gender decomp Plot](images/Decompose_gender.png)
 ![Ethnicity decomp Plot](images/Decompose_ethno.png)
@@ -63,16 +63,18 @@ After 10 epochs accuracy of model is around 90%, which is higher than for non-de
 
 ### Ethnicity Prediction Model
 Two different models have been used for ethnicity predictions
+#### Model 1 higher number of parameter
 1. Input data is passed through 5 Convolution Layers with 3 Max Pooling between 
 2. Data is  flattened
 3. Flattened data is passed through 2 dense layers
 4. Model is compiled with rmsprop optimizer and sparse categorical crossentropy loss function
 
-![Ethnicity CNN 1](images/Ethno_cnn_1.png)
+![Ethnicity CNN 1](images/ethno_cnn_1.png)
 
 After 20 epochs accuracy of model is around 70%, which is higher than for non-deep learning models.
 ![Accuracy CNN Ethno 1](images/Accuracy_cnn_ethno1.png)
 
+#### Model 2 smaller number of parameter
 1. Input data is passed through 4 Convolution Layers with Max Pooling between 
 2. Data is  flattened
 3. Flattened data is passed through 2 dense layers
@@ -84,3 +86,13 @@ It appears that model with less parameters performed better and test accuracy is
 ![Accuracy CNN Ethno 2](images/Accuracy_cnn_ethno2.png)
 
 ### Age Prediction Model
+1. Input data is passed through 3 Convolution Layers with 3 Max Pooling between
+2. Data is flattened
+3. Flattened data is passed through 2 dense layers
+4. Model is complied with adam optimizer and MSE loss function
+
+![Age CNN](images/age_cnn.png)
+
+MAE(mean absolute error) is used as a metrics. 
+
+![Age Metrics](images/age_metrics.png)
