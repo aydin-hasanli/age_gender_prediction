@@ -46,11 +46,29 @@ Ethnicity category is mapped as an integer from 0 to 4, denoting  White, Black, 
 
 ![Accuracy CNN gender](images/gender_cnn.png)
 
-After 20 epochs accuracy of model is around 88%, which is higher than for non-deep learning models.
+After 10 epochs accuracy of model is around 90%, which is higher than for non-deep learning models.
 ![Accuracy CNN gender](images/Accuracy_cnn_gender.png)
 
 ### Ethnicity Prediction Model
+Two different models have been used for ethnicity predictions
+1. Input data is passed through 5 Convolution Layers with 3 Max Pooling between 
+2. Data is  flattened
+3. Flattened data is passed through 2 dense layers
+4. Model is compiled with rmsprop optimizer and sparse categorical crossentropy loss function
+
 ![Ethnicity CNN 1](images/Ethno_cnn_1.png)
-![Ethnicity CNN 2](images/Ethno_cnn_1.png)
+
+After 20 epochs accuracy of model is around 70%, which is higher than for non-deep learning models.
+![Accuracy CNN Ethno 1](images/Accuracy_cnn_ethno1.png)
+
+1. Input data is passed through 4 Convolution Layers with Max Pooling between 
+2. Data is  flattened
+3. Flattened data is passed through 2 dense layers
+4. Model is compiled with adam optimizer and sparse categorical crossentropy loss function
+
+![Ethnicity CNN 2](images/Ethno_cnn_2.png)
+
+It appears that model with less parameters performed better and test accuracy is arround 75%. 
+![Accuracy CNN Ethno 2](images/Accuracy_cnn_ethno2.png)
 
 ### Age Prediction Model
