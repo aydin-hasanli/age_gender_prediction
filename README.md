@@ -33,7 +33,7 @@ Ethnicity category is mapped as an integer from 0 to 4, denoting  White, Black, 
 
 
 ### PCA Decomposition
-PCA decomposition was performed on 90 % of variance. Which came out as 73 componets.
+PCA decomposition was performed on components that explain 90 % of variance. Which came out as 73 componets.
 ![Scree Plot](images/Scree.png)
 ![Gender decomp Plot](images/Decompose_gender.png)
 ![Ethnicity decomp Plot](images/Decompose_ethno.png)
@@ -86,6 +86,8 @@ After 20 epochs accuracy of model is around 70%, which is higher than for non-de
 
 It appears that model with less parameters performed better and test accuracy is arround 75%. 
 ![Accuracy CNN Ethno 2](images/Accuracy_cnn_ethno2.png)
+
+![Conf CNN Ethno 2](images/confethno.png)
 
 ### Age Prediction Model
 1. Input data is passed through 3 Convolution Layers with 3 Max Pooling between
