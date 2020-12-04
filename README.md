@@ -34,7 +34,7 @@ Ethnicity category is mapped as an integer from 0 to 4, denoting  White, Black, 
 ### PCA Decomposition
 
 ### Comparison of Classification Models
-
+![Accurac Comparison](images/Accuracy_comparision_.png)
 
 ## Deep Learning Models
 
