@@ -61,6 +61,8 @@ As it was expected none Deep Learning models did not demostrate feasible results
 After 10 epochs accuracy of model is around 90%, which is higher than for non-deep learning models.
 ![Accuracy CNN gender](images/Accuracy_cnn_gender.png)
 
+Predicted vs Actual 
+![Gender Predictions](images/predicted_gender.png)
 ### Ethnicity Prediction Model
 Two different models have been used for ethnicity predictions
 #### Model 1 higher number of parameter
@@ -93,6 +95,9 @@ It appears that model with less parameters performed better and test accuracy is
 
 ![Age CNN](images/age_cnn.png)
 
-MAE(mean absolute error) is used as a metrics. 
+MAE(mean absolute error) is used as a metrics. MAE value is around 7, which this cnn model can work for age prediction.
 
 ![Age Metrics](images/age_metrics.png)
+
+Predicted vs Actual 
+![Age Predictions](images/predicted_age.png)
