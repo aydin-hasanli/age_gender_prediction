@@ -32,6 +32,11 @@ Ethnicity category is mapped as an integer from 0 to 4, denoting  White, Black, 
 ## Non Deep Learning Models
 
 ### PCA Decomposition
+PCA decomposition was performed on 90 % of variance.
+![Scree Plot](images/Scree.png)
+![Gender decomp Plot](images/Decompose_gender.png)
+![Ethnicity decomp Plot](images/Decompose_ethno.png)
+![Age decomp Plot](images/Decompose_age.png)
 
 ### Comparison of Classification Models
 ![Accurac Comparison](images/Accuracy_comparision_.png)
