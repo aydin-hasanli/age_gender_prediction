@@ -29,19 +29,26 @@ Number of male individuals is little higher female, however difference can be ne
 Ethnicity category is mapped as an integer from 0 to 4, denoting  White, Black, Asian, Indian, and Others (like Hispanic, Latino, Middle Eastern) respectively. 
 ![Ethnicity EDA](images/Ethnicity_EDA.png)
 
-## Non Deep Learning Models
+## None Deep Learning Models
+
 
 ### PCA Decomposition
-PCA decomposition was performed on 90 % of variance.
+PCA decomposition was performed on 90 % of variance. Which came out 73 componets.
 ![Scree Plot](images/Scree.png)
 ![Gender decomp Plot](images/Decompose_gender.png)
 ![Ethnicity decomp Plot](images/Decompose_ethno.png)
 ![Age decomp Plot](images/Decompose_age.png)
+From decomposistion plot for each target is it obvious that there is no any visible pattern.
 
 ### Comparison of Classification Models
-![Accurac Comparison](images/Accuracy_comparision_.png)
+Support Vector Machine Classifier, KNeighborsClassifier were used to classify Gender and Ethnicity, but the accuracy was not high. As an input Decomposed Matrix of image data was used. 
+
+Afterwards ensemble Voting Classifier was used to combine SVM and KNN. Again low accuracy was observed. Out three methods KNN demostrated higher accuracy. Comparison of outputs is demonstrated below. 
+
+![Accurac Comparison none deep learning](images/Accuracy_comparision_.png)
 
 ## Deep Learning Models
+As it was expected none Deep Learning models did not demostrate feasible results. So Dl models were used for classification
 
 ### Gender CNN Prediction Model
 1. Input data is passed through 4 Convolution Layers with Max Pooling between each
