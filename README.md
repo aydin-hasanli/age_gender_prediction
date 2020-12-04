@@ -38,8 +38,19 @@ Ethnicity category is mapped as an integer from 0 to 4, denoting  White, Black, 
 
 ## Deep Learning Models
 
-### Gender Prediction Model
+### Gender CNN Prediction Model
+1. Input data is passed through 4 Convolution Layers with Max Pooling between each
+2. Data is flattened
+3. Flattened data is passed through 2 dense layers
+4. Model is compiled with adam optimizer and binary crossentropy loss function
+
+![Accuracy CNN gender](images/gender_cnn.png)
+
+After 20 epochs accuracy of model is around 88%, which is higher than for non-deep learning models.
+![Accuracy CNN gender](images/Accuracy_cnn_gender.png)
 
 ### Ethnicity Prediction Model
+![Ethnicity CNN 1](images/Ethno_cnn_1.png)
+![Ethnicity CNN 2](images/Ethno_cnn_1.png)
 
 ### Age Prediction Model
